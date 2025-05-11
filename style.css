@@ -1,0 +1,401 @@
+/* General Styles */body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    /* color: #000000; */
+   
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 4px;
+    box-shadow: 0;
+    border: 1px solid #c3b7b7; /* Add a light gray border */
+}
+
+h1, h2 {
+    color: #333;
+}
+
+
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+/* Form Group */
+.form-group {
+    margin-bottom: 20px; /* Increased spacing for better separation */
+    display: flex; /* Flexbox for better alignment */
+    flex-direction: column; /* Stack label and input vertically */
+    gap: 5px; /* Add spacing between label and input */
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-size: 0.9em; /* Slightly smaller font for labels */
+    color: #333; /* Ensure consistent text color */
+}
+
+input, select, textarea {
+    width: 55%;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em; /* Ensure consistent font size */
+    background-color: #fff; /* Ensure input background is white */
+    box-sizing: border-box; /* Prevent overflow issues */
+}
+
+textarea {
+    resize: none;
+    height: 100px;
+}
+
+/* Options Buttons */
+.options button {
+    margin-right: 10px;
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background: #f4f4f4;
+    cursor: pointer;
+}
+
+.options button:hover {
+    background: #ddd;
+}
+
+/* Selected Option Button */
+.options button.selected {
+    background-color: #0057b33f; /* Blue background for selected button */
+    color: #000000; /* White text for selected button */
+    border-color: #0056b3; /* Darker blue border for selected button */
+}
+
+/* Change Button as Link */
+.change-btn {
+    background: none;
+    color: #007bff;
+    border: none;
+    padding: 0;
+    font-weight: normal;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.change-btn:hover {
+    color: #0056b3;
+    text-decoration: none;
+}
+
+/* Options Buttons Layout */
+/* Options Buttons */
+.options button {
+    appearance: none;
+    background-color: var(--white);
+    border-radius: 4px;
+    border-style: none;
+    color: var(--blackText);
+    cursor: pointer;
+    font-size: 14px;
+    height: 36px;
+    margin-bottom: 8px;
+    margin-right: 8px;
+    min-width: 64px;
+    outline: 0;
+    padding: 8px 16px;
+    border: #545454 solid 1px;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+.options button:hover {
+    background-color: #add4ff; /* Blue background on hover */
+    
+}
+
+/* Headings */
+h2 {
+    font-size: 1.2em; /* Increased font size */
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+/* Labels */
+label {
+    font-weight: 600;
+    font-size: 0.9em;
+}
+
+/* Buttons */
+button {
+    font-size: 0.85em;
+}
+
+/* Options Buttons Layout */
+.options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+/* Change Button as Link */
+.change-btn {
+    background: none;
+    color: #007bff;
+    border: none;
+    padding: 0;
+    font-weight: normal;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.change-btn:hover {
+    color: #0056b3;
+    text-decoration: none;
+}
+
+/* Headings */
+h2 {
+    font-size: 1.2em; /* Increased font size */
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+/* Labels */
+label {
+    font-weight: 600;
+    font-size: 0.9em;
+}
+
+/* Buttons */
+button {
+    font-size: 0.85em;
+}
+
+/* Error Message */
+.error {
+    color: red;
+    font-size: 0.9em;
+    margin-top: -10px;
+   
+    
+}
+/* Submit Button */
+.submit-btn {
+    width: 15%;
+    padding: 15px;
+    background: #ccc;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 1.2em;
+    cursor: not-allowed;
+    opacity: 0.6;
+}
+
+/* Submit Button Enabled */
+.submit-btn:enabled {
+    background: #007bff;
+    cursor: pointer;
+    opacity: 1;
+}
+
+.submit-btn:enabled:hover {
+    background: #0056b3;
+}
+
+/* Tabs */
+.tabs {
+    display: flex;
+    border-bottom: 2px solid #007bff;
+    margin-bottom: 10px;
+}
+
+.tab {
+    padding: 10px 20px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 0.9em;
+    color: #007bff;
+    border-bottom: 3px solid transparent;
+}
+
+.tab.active {
+    border-bottom: 3px solid #007bff;
+}
+
+/* Avatar with Camera Overlay */
+.avatar-container {
+    position: relative;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.avatar-image {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.camera-overlay {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background: #007bff;
+    border-radius: 50%;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.camera-overlay svg {
+    fill: white;
+    width: 16px;
+    height: 16px;
+}
+
+/* Character Count */
+.char-count {
+    font-size: 0.8em;
+    color: #666;
+    margin-left: 5px;
+}
+
+/* Error Message */
+.error {
+    color: red;
+    font-size: 0.9em;
+    margin-top: -10px;
+    margin-bottom: 10px;
+}
+
+.submit-btn:enabled {
+    background: #007bff;
+    cursor: pointer;
+}
+
+.submit-btn:enabled:hover {
+    background: #0056b3;
+}
+
+/* Photo Upload Section */
+.photo-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columns layout */
+    gap: 10px; /* Increased gap for better spacing */
+}
+
+.photo-placeholder, .add-photo {
+    width: 100%; /* Adjusted to fit the grid column */
+    height: 100px;
+    border: 1px  #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; /* Align content vertically */
+    color: var(--blackOpaque); /* Use the provided color variable */
+    cursor: pointer;
+    background: #f9f9f9;
+}
+
+.add-photo:hover {
+    background: #ddd;
+}
+
+.photo-placeholder .camera-icon {
+    font-size: 24px; /* Adjust the size of the camera icon */
+    color: #888; /* Gray color for the icon */
+    margin-bottom: 5px; /* Add spacing below the icon */
+}
+
+.photo-placeholder:hover .camera-icon {
+    color: #007bff; /* Change color on hover */
+}
+
+/* Category Section */
+p {
+    color: #888888; /* Normal dark gray color */
+    font-size: 0.9em; /* Reduced font size */
+    line-height: 1.5; /* Maintain readability */
+}
+
+.field-description {
+   
+}
+
+/* General Mobile Styles */
+@media (max-width: 768px) {
+    .container {
+        max-width: 100%; /* Full width for smaller screens */
+        padding: 10px; /* Reduce padding */
+    }
+
+    h1, h2 {
+        font-size: 1.5em; /* Adjust heading sizes */
+        text-align: center; /* Center align headings */
+    }
+
+    .form-group {
+        gap: 10px; /* Increase spacing between elements */
+    }
+
+    input, select, textarea {
+        width: 100%; /* Full width inputs for mobile */
+        padding: 10px; /* Reduce padding */
+        font-size: 1em; /* Adjust font size */
+    }
+
+   
+
+    .submit-btn {
+        width: 100%; /* Full width submit button */
+        padding: 12px; /* Adjust padding */
+        font-size: 1em; /* Adjust font size */
+    }
+
+
+    
+
+    .tabs {
+        flex-direction: column; /* Stack tabs vertically */
+    }
+
+    .tab {
+        padding: 8px 10px; /* Adjust padding for tabs */
+        font-size: 0.85em; /* Adjust font size */
+    }
+}
+
+/* Extra Small Devices (max-width: 480px) */
+@media (max-width: 480px) {
+    h1, h2 {
+        font-size: 1.2em; /* Further reduce heading sizes */
+    }
+
+    .form-group {
+        gap: 8px; /* Adjust spacing */
+    }
+
+    input, select, textarea {
+        font-size: 0.9em; /* Smaller font size for inputs */
+    }
+
+
+
+    .submit-btn {
+        font-size: 0.9em; /* Smaller font size for submit button */
+    }
+}
