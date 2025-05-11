@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post Your Ad</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+     <h1>Post Your Ad</h1>
+
+    <div class="container" >
+       
+
+        <!-- Category Section -->
+        <section class="category-section" >
+            <h2>Selected Category</h2>
+            <p>Properties / For Sale: Houses & Apartments</p>
+            <button class="change-btn" type="button">Change</button>
+        </section>
+
+        <!-- Details Section -->
+        <section class="details-section">
+            <h2>Include Some Details</h2>
+            <div class="form-group">
+                <label for="type">Type *</label>
+                <div class="options" id="type">
+                    <button type="button">Flats / Apartments</button>
+                    <button type="button">Independent / Builder Floors</button>
+                    
+                    <button type="button">Farm House</button>
+                    <button type="button">House & Villa</button>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="bhk">BHK</label>
+                <div class="options" id="bhk">
+                    <button type="button">1</button>
+                    <button type="button">2</button>
+                    <button type="button">3</button>
+                    <button type="button">4+</button>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="bathrooms">Bathrooms</label>
+                <div class="options" id="bathrooms">
+                    <button type="button">1</button>
+                    <button type="button">2</button>
+                    <button type="button">3</button>
+                    <button type="button">4+</button>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="furnishing">Furnishing</label>
+                <div class="options" id="furnishing">
+                    <button type="button">Furnished</button>
+                    <button type="button">Semi-Furnished</button>
+                    <button type="button">Unfurnished</button>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="project-status">Project Status</label>
+                <div class="options" id="project-status">
+                    <button type="button">New Launch</button>
+                    <button type="button">Ready to Move</button>
+                    <button type="button">Under Construction</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Additional Details Section -->
+        <section class="additional-details-section">
+            <h2>Additional Details</h2>
+            <div class="form-group">
+                <label for="listed-by">Listed by</label>
+                <div class="options" id="listed-by">
+                    <button type="button">Builder</button>
+                    <button type="button">Dealer</button>
+                    <button type="button">Owner</button>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="super-builtup-area">Super Builtup Area (sqft) *</label>
+                <input type="text" id="super-builtup-area" >
+            </div>
+            <div class="form-group">
+                <label for="carpet-area">Carpet Area (sqft) *</label>
+                <input type="text" id="carpet-area" >
+            </div>
+            <div class="form-group">
+                <label for="maintenance">Maintenance (Monthly)</label>
+                <input type="text" id="maintenance" >
+            </div>
+            <div class="form-group">
+                <label for="total-floors">Total Floors</label>
+                <input type="text" id="total-floors" >
+            </div>
+            <div class="form-group">
+                <label for="floor-no">Floor No</label>
+                <input type="text" id="floor-no">
+            </div>
+            <div class="form-group">
+                <label for="car-parking">Car Parking</label>
+                <div class="options" id="car-parking">
+                    <button type="button">0</button>
+                    <button type="button">1</button>
+                    <button type="button">2</button>
+                    <button type="button">3</button>
+                    <button type="button">3+</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Ad Details Section -->
+        <section class="ad-details-section">
+            <h2>Ad Details</h2>
+            <div class="form-group">
+                <label for="facing">Facing</label>
+               
+                <input type="text" id="facing">
+                
+            </div>
+            <div class="form-group">
+                <label for="project-name">Project Name</label>
+                
+                <input type="text" id="project-name" maxlength="70">
+               
+            </div>
+            <div class="form-group">
+                <label for="ad-title">Ad Title *</label>
+                
+                <input type="text" id="ad-title" maxlength="70">
+                
+            </div>
+            <div class="form-group">
+                <label for="description">Description *</label>
+                
+                <textarea id="description" maxlength="4096"></textarea>
+                
+            </div>
+            <div class="form-group">
+                <label for="price">Price *</label>
+                
+                <input type="text" id="price">
+                
+            </div>
+        </section>
+
+        <!-- Photo Upload Section -->
+        <section class="photo-upload-section">
+            <h2>Upload up to 20 Photos</h2>
+            <div class="photo-grid">
+                <button class="add-photo" type="button">Add Photo</button>
+                <div class="photo-placeholder"></div>
+                <div class="photo-placeholder"></div>
+                <div class="photo-placeholder"></div>
+                <div class="photo-placeholder"></div>
+                <div class="photo-placeholder"></div>
+                <div class="photo-placeholder"></div>
+                <div class="photo-placeholder"></div>
+                <div class="photo-placeholder"></div>
+                <div class="photo-placeholder"></div>
+                <div class="photo-placeholder"></div>
+                <div class="photo-placeholder"></div>
+                <div class="photo-placeholder"></div>
+                <div class="photo-placeholder"></div>
+                <div class="photo-placeholder"></div>
+                <div class="photo-placeholder"></div>
+                <div class="photo-placeholder"></div>
+                <div class="photo-placeholder"></div>
+                <div class="photo-placeholder"></div>
+                <div class="photo-placeholder"></div>
+            </div>
+           
+        </section>
+         <p class="error">This field is mandatory</p>
+
+        <!-- Location Section -->
+        <section class="location-section">
+            <h2>Confirm Your Location</h2>
+            <label for="state">State *</label>
+            <select id="state">
+                <option value="">Select State</option>
+                <option value="andhra-pradesh">Andhra Pradesh</option>
+                <option value="arunachal-pradesh">Arunachal Pradesh</option>
+                <option value="assam">Assam</option>
+                <option value="bihar">Bihar</option>
+                <option value="chhattisgarh">Chhattisgarh</option>
+                <option value="goa">Goa</option>
+                <option value="gujarat">Gujarat</option>
+                <option value="haryana">Haryana</option>
+                <option value="himachal-pradesh">Himachal Pradesh</option>
+                <option value="jharkhand">Jharkhand</option>
+                <option value="karnataka">Karnataka</option>
+                <option value="kerala">Kerala</option>
+                <option value="madhya-pradesh">Madhya Pradesh</option>
+                <option value="maharashtra">Maharashtra</option>
+                <option value="manipur">Manipur</option>
+                <option value="meghalaya">Meghalaya</option>
+                <option value="mizoram">Mizoram</option>
+                <option value="nagaland">Nagaland</option>
+                <option value="odisha">Odisha</option>
+                <option value="punjab">Punjab</option>
+                <option value="rajasthan">Rajasthan</option>
+                <option value="sikkim">Sikkim</option>
+                <option value="tamil-nadu">Tamil Nadu</option>
+                <option value="telangana">Telangana</option>
+                <option value="tripura">Tripura</option>
+                <option value="uttar-pradesh">Uttar Pradesh</option>
+                <option value="uttarakhand">Uttarakhand</option>
+                <option value="west-bengal">West Bengal</option>
+                <option value="andaman-nicobar">Andaman and Nicobar Islands</option>
+                <option value="chandigarh">Chandigarh</option>
+                <option value="dadra-nagar-haveli">Dadra and Nagar Haveli</option>
+                <option value="daman-diu">Daman and Diu</option>
+                <option value="delhi">Delhi</option>
+                <option value="lakshadweep">Lakshadweep</option>
+                <option value="puducherry">Puducherry</option>
+                <option value="ladakh">Ladakh</option>
+                <option value="jammu-kashmir">Jammu and Kashmir</option>
+            </select>
+            
+        </section>
+        <p class="error">This field is mandatory</p>
+
+        <!-- Review Section -->
+        <section class="review-section">
+            <h2>Review Your Details</h2>
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" value="Jitendra Kumar" readonly>
+            </div>
+            <div class="form-group">
+                <label for="phone-number">Your phone number</label>
+                <p id="phone-number">+917780076976</p>
+            </div>
+        </section>
+
+        <!-- Submit Button -->
+        <button class="submit-btn" disabled>Post Now</button>
+    </div>
+</body>
+</html>
